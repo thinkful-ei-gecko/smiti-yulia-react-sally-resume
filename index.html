@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sally Student Resume</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type = "text/babel">
+        function RenderResume() {
+            return (
+                <div>
+                    <header><h1>Sally Student</h1></header>
+                    <main>
+                        <section>
+                            <header>
+                            <h2>Employment History</h2>
+                            </header>  
+                            <p>Cats Inc.<br></br>Web Developer<br></br>January 2014- May 2017<br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Cats and Dogs<br></br>Software Engineer<br></br>June 2017 -present<br></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </section>
+                        <section>
+                            <header>
+                            <h2>Education</h2>
+                            <p>Associate degree in Computer Science</p>
+                            </header>
+                            <p>Santa Monica College, 2016-2018</p>
+                        </section>
+                    </main>
+                    <address>
+                        <p><a href="mailto:sallystudent@wow.com" target="_blank">Email me</a> or Call 356-056-1234</p>
+                    </address>
+                    <footer>© 2019 Sally A. Student</footer>
+                </div>
+            );
+        };
+        ReactDOM.render(<RenderResume />, document.querySelector('#root'));
+    </script>
+  </body>
+</html>
